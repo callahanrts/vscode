@@ -12,7 +12,7 @@ ln -sf $REPO/snippets $HOME/.config/Code/User/snippets
 ln -sf $REPO/os/linux/zshrc ~/.zshrc
 
 # Install debian libraries
-apt-get install -y zsh fzf jq
+apt-get install -y zsh jq
 
 # Switch shell to zsh
 echo "exec zsh" >> $HOME/.bashrc
