@@ -1,0 +1,21 @@
+#!/bin/bash
+REPO=$HOME/.config/vscode
+
+mkdir -p $HOME/.config/Code/User
+
+# Copy VSCode settings and snippets into dev container
+ln -sf $REPO/settings.json $HOME/.config/Code/User/settings.json
+ln -sf $REPO/keybindings.json $HOME/.config/Code/User/keybindings.json
+ln -sf $REPO/snippets $HOME/.config/Code/User/snippets
+
+# Symlink your startup script
+ln -sf $REPO/os/linux/zshrc ~/.zshrc
+
+# Install debian libraries
+apt-get install -y zsh fzf jq
+
+# Switch shell to zsh
+echo "exec zsh" >> $HOME/.bashrc
+
+# Install pure-prompt
+npm install --global pure-prompt

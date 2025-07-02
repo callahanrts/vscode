@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ln -sf $HOME/github.com/callahanrts/vscode/settings.json $HOME/.config/Code/User/settings.json
+ln -sf $HOME/github.com/callahanrts/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
+ln -sf $HOME/github.com/callahanrts/vscode/snippets $HOME/.config/Code/User/snippets

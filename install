@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Install VSCode extensions
+cat extensions | while read line
+do
+  code --install-extension $line
+done
+
+# Run the install script for the particular environment
+unameOut="$(uname -s)"
+case "${unameOut}" in
+  Linux*)     $(pwd)/os/linux/install;;
+  Darwin*)    $(pwd)/os/macos/install;;
+  *)          $(pwd)/os/unknown/install
+esac

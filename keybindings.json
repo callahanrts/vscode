@@ -1,0 +1,108 @@
+// Place your key bindings in this file to override the defaultsauto[]
+// A "-" symbol at the beginning of a command will unbind
+[
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "alt+w",
+    "command": "workbench.action.switchWindow"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "up",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "up",
+    "command": "-cursorUp",
+    "when": "textInputFocus"
+  },
+  // {
+  //   "key": "ctrl+p",
+  //   "command": "cursorUp",
+  //   "when": "terminalFocus"
+  // },
+  // {
+  //   "key": "ctrl+n",
+  //   "command": "cursorDown",
+  //   "when": "terminalFocus"
+  // },
+  {
+    "key": "q",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "explorerViewletVisible && explorerViewletFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+x a",
+    "command": "workbench.action.findInFiles"
+  },
+  {
+    "key": "ctrl+x t",
+    "command": "workbench.action.showAllSymbols"
+  },
+  // Formatting
+  {
+    "key": "<leader>ps",
+    "command": "workbench.action.formatSelection"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "extension.vim_ctrl+p",
+    "when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+    "when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "vim.remap",
+    "when": "inputFocus && editorTextFocus && vim.mode == 'Normal'",
+    "args": {
+      "after": ["{"]
+    }
+  },
+
+  // Cycle through terminal windows
+  {
+      "key": "ctrl+cmd+j",
+      "command": "workbench.action.terminal.focusNext",
+      "when": "terminalFocus"
+  },
+  {
+      "key": "ctrl+cmd+k",
+      "command": "workbench.action.terminal.focusPrevious",
+      "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  }
+]
