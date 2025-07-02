@@ -1,9 +1,20 @@
 #!/bin/bash
 
+echo ""
+echo ""
+echo ""
+echo $(whoami)
+echo $PATH
+echo $(which code)
+echo ""
+echo ""
+echo ""
 # Install VSCode extensions
 cat extensions | while read line
 do
+  echo "[INSTALLING] $line"
   code --install-extension $line
+  echo "[INSTALLED] $line"
 done
 
 # Run the install script for the particular environment
