@@ -269,5 +269,12 @@
   "docker.extension.enableComposeLanguageServer": false,
   "dotfiles.repository": "callahanrts/vscode",
   "dotfiles.targetPath": "~/.config/vscode",
-  "dotfiles.installCommand": "install"
+  "dotfiles.installCommand": "install",
+
+  // Enable all hints
+  "rubyLsp.featuresConfiguration.inlayHint.enableAll": true,
+  // Enable implicit rescue (defaults to true)
+  "rubyLsp.featuresConfiguration.inlayHint.implicitRescue": true,
+  // Enable implicit hash values (omitted hash values)
+  "rubyLsp.featuresConfiguration.inlayHint.implicitHashValue": true
 }
