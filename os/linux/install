@@ -15,7 +15,7 @@ ln -sf $REPO/os/linux/zshrc ~/.zshrc
 apt-get install -y zsh jq
 
 # Switch shell to zsh
-echo "exec zsh" >> $HOME/.bashrc
+# echo "exec zsh" >> $HOME/.bashrc
 
 # Install pure-prompt
 npm install --global pure-prompt
