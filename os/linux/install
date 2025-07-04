@@ -16,6 +16,17 @@ apt-get install -y zsh jq
 
 # Switch shell to zsh
 # echo "exec zsh" >> $HOME/.bashrc
+# Invoke zsh using interactive mode (loads ~/.zshrc) to run a single command
+# The command is `rbenv exec ruby`, which automatically sets all relevant environment variables and selects the
+# specified Ruby version
+# We then print the activated environment as JSON. We read that JSON from the NodeJS process to insert the needed
+# environment variables in order to run Ruby correctly
+# echo /bin/zsh -ic 'rbenv exec ruby -rjson -e "puts JSON.dump(ENV.to_h)"' >> $HOME/.bashrc
+
+# echo "if [[ -n \$ZSH_INIT_COMMAND ]]; then
+#   eval "\$ZSH_INIT_COMMAND"
+# fi
+# " >> $HOME/.bashrc
 
 # Install pure-prompt
 npm install --global pure-prompt
