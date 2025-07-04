@@ -277,11 +277,5 @@
   "rubyLsp.featuresConfiguration.inlayHint.implicitRescue": true,
   // Enable implicit hash values (omitted hash values)
   "rubyLsp.featuresConfiguration.inlayHint.implicitHashValue": true,
-
-  // "terminal.integrated.shell.linux": "exec zsh"
-  // "terminal.integrated.env.linux": {
-  //   "ZSH_INIT_COMMAND": "eval zsh"
-  // }
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.profiles.linux": { "zsh": { "path": "/usr/bin/zsh" } }
+  "terminal.integrated.defaultProfile.linux": "zsh"
 }

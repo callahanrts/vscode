@@ -9,19 +9,6 @@
 4. Add this user setting in VSCode to make sure your personal extensions are installed in all dev containers
    ```json
    "dev.containers.defaultExtensions": [
-     "GitHub.vscode-pull-request-github",
-     "Gruntfuggly.todo-tree",
-     "Vue.volar",
-     "dbaeumer.vscode-eslint",
-     "eamodio.gitlens",
-     "esbenp.prettier-vscode",
-     "github.vscode-github-actions",
-     "janjoerke.align-by-regex",
-     "ms-azuretools.vscode-containers",
-     "ms-toolsai.datawrangler",
-     "redhat.vscode-yaml",
-     "vscodevim.vim",
-     "yzhang.markdown-all-in-one",
-     "zhuangtongfa.material-theme"
+     ...
    ],
   ```
