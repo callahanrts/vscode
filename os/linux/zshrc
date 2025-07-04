@@ -4,6 +4,7 @@ prompt pure
 export PURE_PROMPT_SYMBOL=" ❯"
 
 # Aliases
+alias ls='eza'
 alias l='ls -al'
 alias uncommit='git reset --soft HEAD\^'
 export EDITOR='vim'
