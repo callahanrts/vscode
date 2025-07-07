@@ -21,6 +21,3 @@ function grefresh() {
   git reset --hard origin/$branch
   git pull
 }
-
-# Make SCSDev executables available
-export PATH="$PATH:$HOME/.config/sendcutsend/scsdev/bin"
